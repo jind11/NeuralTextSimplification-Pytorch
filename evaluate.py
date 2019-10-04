@@ -278,36 +278,3 @@ if __name__ == '__main__':
 
     sari_test, sari_arr = score(source, refs, fold, SARI_file, normalize)
     bleu_test, bleu_arr = score(source, refs, fold, BLEU_file, lowstrip)
-    worddiff_test, worddiff_arr = score(source, refs, fold, worddiff_file, lowstrip)
-    FKdiff_test, FKdiff_arr = score(source, refs, fold, FKdiff_file, lowstrip)
-    IsSame_test, IsSame_arr = score(source, refs, fold, IsSame_file, lowstrip)
-    LD_test, LD_arr = score(source, refs, fold, LD_file, lowstrip)
-    FKGL_test, FKGL_arr = score(source, refs, fold, FKGL_file, lowstrip)
-
-    # whichone = os.path.basename(os.path.abspath(os.path.join(fold, '..'))) + \
-    #                 '\t' + \
-    #                 os.path.basename(refs).replace('.ref', '').replace("test_0_", "")
-    # print_scores(sari_test, "SARI\t" + whichone)
-    # print_scores(bleu_test, "BLEU\t" + whichone)
-
-    # print('\nSARI:')
-    # for key, val in sari_arr.items():
-    #     print(key, val)
-    # print('\nBLEU:')
-    # for key, val in bleu_arr.items():
-    #     print(key, val)
-    # print('\nWORD DIFF:')
-    # for key, val in worddiff_arr.items():
-    #     print(key, val)
-    # print('\nFK DIFF:')
-    # for key, val in FKdiff_arr.items():
-    #     print(key, val)
-    # print('\nLD:')
-    # for key, val in LD_arr.items():
-    #     print(key, val)
-    # print('\nIsSame Percent:')
-    # for key, val in IsSame_arr.items():
-    #     print(key, val)
-    # print('\nFKGL:')
-    # for key, val in FKGL_arr.items():
-    #     print(key, val)

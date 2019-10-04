@@ -1,6 +1,6 @@
 #!/bin/bash
 
 DATA=data
-PRED=results/nts_step_15000
+PRED=results/nts_step_20000
 
-python evaluate.py $DATA/test_uni.en $DATA/references/test_references.tsv $PRED
+python evaluate.py $DATA/test_uni.en $DATA/test_references.tsv $PRED
